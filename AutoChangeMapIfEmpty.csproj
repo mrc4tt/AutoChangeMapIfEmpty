@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseCounterStrikeSharp>true</UseCounterStrikeSharp>
+    <PublishDir>./bin/AutoChangeMapIfEmpty/</PublishDir>
+    <Optimize>true</Optimize>
+    <OutputType>Library</OutputType>
+    <AssemblyName>AutoChangeMapIfEmpty</AssemblyName>
+    <RootNamespace>AutoChangeMapIfEmpty</RootNamespace>
+  </PropertyGroup>
+  <!-- Only for Release publishes -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <!-- No PDB -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+
+    <!-- No deps.json / runtimeconfig.json -->
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+
+    <!-- Don’t copy transitive refs to output -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <Import Project="CounterStrikeSharp.targets" />
+</Project>
