@@ -33,3 +33,7 @@ addons/counterstrikesharp/plugins/AutoChangeMapIfEmpty/
 ## Releasing
 
 Bump `ModuleVersion`, add a `## X.Y.Z` section to `CHANGELOG.md`, push tag `vX.Y.Z` from `main`. `./package.sh` builds the same zip locally.
+
+## License
+
+[MIT](LICENSE)
