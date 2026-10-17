@@ -1,6 +1,6 @@
-# AutoChangeMapIfEmpty (FSHOST)
+# AutoChangeMapIfEmpty
 
-CounterStrikeSharp plugin for FSHOST CS2 Pro servers. When the server has been empty (no human players; bots and GOTV don't count) for a configurable time, it reloads the map the server was started with.
+CounterStrikeSharp plugin. When the server has been empty (no human players; bots and GOTV don't count) for a configurable time, it reloads the map the server was started with.
 
 The startup map is read from the server's command line:
 
